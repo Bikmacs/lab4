@@ -30,8 +30,10 @@
 
 
 int main() {
-        const char c = 'a';
-        double y = sin(M_PI / 2 + 3 * isalpha(c)) / (1 - sin(3 * isalpha(c) - M_PI/2));
+        int a;
+        std::cout << "Значение альфы ";
+        std::cin >> a;
+        const double y = sin(M_PI / 2 + 3 * a) / (1 - sin(3 * a - M_PI/2));
 
         std::cout << y << std::endl;
         return 0;
